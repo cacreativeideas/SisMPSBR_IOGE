@@ -1,0 +1,38 @@
+<?php
+namespace App\Model\Entity;
+
+use Cake\ORM\Entity;
+
+/**
+ * LicoesAprendida Entity.
+ *
+ * @property int $id
+ * @property string $licao_aprendida
+ * @property string $ocorrencia
+ * @property string $momento_projeto
+ * @property string $impacto
+ * @property string $influencia
+ * @property string $data_identificacao
+ * @property \Cake\I18n\Time $data_cadastro
+ * @property int $projeto_id
+ * @property \App\Model\Entity\Projeto $projeto
+ * @property int $ativo
+ * @property int $topico_id
+ */
+class LicoesAprendida extends Entity
+{
+
+    /**
+     * Fields that can be mass assigned using newEntity() or patchEntity().
+     *
+     * Note that when '*' is set to true, this allows all unspecified fields to
+     * be mass assigned. For security purposes, it is advised to set '*' to false
+     * (or remove it), and explicitly make individual fields accessible as needed.
+     *
+     * @var array
+     */
+    protected $_accessible = [
+        '*' => true,
+        'id' => false,
+    ];
+}

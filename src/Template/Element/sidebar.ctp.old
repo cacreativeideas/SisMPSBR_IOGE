@@ -1,0 +1,215 @@
+<ul class="side-nav">
+    <li>
+        <?= $this->Html->link(__('Dashboard'), ['controller' => 'InstituicoesOrganizadoras', 'action' => 'dashboard']) ?>
+    </li>
+    <li>
+        <a data-toggle="collapse" href="#collapse1" class="heading">
+            <span class="fa fa-caret-right"></span> Empresas
+        </a>
+
+        <div id="collapse1" class="panel-collapse collapse">
+                <ul>
+                    <li>
+                        <?= $this->Html->link(__('Adicionar Empresa'), ['controller' => 'Empresas', 'action' => 'add']) ?>
+                    </li>
+                    <li>
+                        <?= $this->Html->link(__('Gerenciar Empresas'), ['controller' => 'Empresas', 'action' => 'index']) ?>
+                    </li>
+                </ul>
+        </div>
+    </li>
+
+    <li>
+        <a data-toggle="collapse" href="#collapse2" class="heading">
+            <span class="fa fa-caret-right"></span> Unidades Organizacionais
+        </a>
+
+        <div id="collapse2" class="panel-collapse collapse">
+
+                <ul>
+                    <li>
+                        <?= $this->Html->link(__('Adicionar UO'), ['controller' => 'UnidadesOrganizacionais', 'action' => 'add']) ?>
+                    </li>
+                    <li>
+                        <?= $this->Html->link(__('Gerenciar UO\'s'), ['controller' => 'UnidadesOrganizacionais', 'action' => 'index']) ?>
+                    </li>
+                    <li>
+                        <?= $this->Html->link(__('Adicionar Projeto de UO'), ['controller' => 'ProjetosUos', 'action' => 'add']) ?>
+                    </li>
+                    <li>
+                        <?= $this->Html->link(__('Gerenciar Projetos de UO'), ['controller' => 'ProjetosUos', 'action' => 'index']) ?>
+                    </li>
+                </ul>
+        </div>
+    </li>
+    <li>
+        <a data-toggle="collapse" href="#collapse3" class="heading">
+            <span class="fa fa-caret-right"></span> Grupo de Empresas
+        </a>
+
+        <div id="collapse3" class="panel-collapse collapse">
+                <ul>
+                    <li>
+                        <?= $this->Html->link(__('Adicionar Grupo de Empresas'), ['controller' => 'GruposEmpresas', 'action' => 'add']) ?>
+                    </li>
+                    <li>
+                        <?= $this->Html->link(__('Associar UO a Grupo de Empresas'), ['controller' => 'GruposEmpresas', 'action' => 'associarUnidadeOrganizacional']) ?>
+                    </li>
+                    <li>
+                        <?= $this->Html->link(__('Associar II a Grupo de Empresas'), ['controller' => 'GruposEmpresas', 'action' => 'associarInstituicaoImplementadora']) ?>
+                    </li>
+                    <li>
+                        <?= $this->Html->link(__('Associar IA a Grupo de Empresas'), ['controller' => 'GruposEmpresas', 'action' => 'associarInstituicaoAvaliadora']) ?>
+                    </li>
+                    <li>
+                        <?= $this->Html->link(__('Gerenciar Grupos de Empresas'), ['controller' => 'GruposEmpresas', 'action' => 'index']) ?>
+                    </li>
+                    <li>
+                        <?= $this->Html->link(__('Gerenciar Pagamentos'), ['controller' => 'Pagamentos', 'action' => 'index']) ?>
+                    </li>
+                </ul>
+        </div>
+    </li>
+    <li>
+        <a data-toggle="collapse" href="#collapse4" class="heading">
+            <span class="fa fa-caret-right"></span> Projeto de Grupo de Empresas
+        </a>
+
+        <div id="collapse4" class="panel-collapse collapse">
+                <ul>
+                    <li>
+                        <?= $this->Html->link(__('Adicionar Projeto de Implementação'), ['controller' => 'Projetos', 'action' => 'add']) ?>
+                    </li>
+                    <li>
+                        <?= $this->Html->link(__('Gerenciar Projetos de Implementação'), ['controller' => 'Projetos', 'action' => 'index']) ?>
+                    </li>
+                    <li>
+                        <?= $this->Html->link(__('Adicionar Consultores do Projeto'), ['controller' => 'Consultores', 'action' => 'associarConsultorProjeto']) ?>
+                    </li>
+                    <li>
+                        <?= $this->Html->link(__('Gerenciar Riscos'), ['controller' => 'Riscos', 'action' => 'index']) ?>
+                    </li>
+                    <li>
+                        <?= $this->Html->link(__('Gerenciar Problemas'), ['controller' => 'Problemas', 'action' => 'index']) ?>
+                    </li>
+                    <li>
+                        <?= $this->Html->link(__('Gerenciar Lições Aprendidas'), ['controller' => 'LicoesAprendidas', 'action' => 'index']) ?>
+                    </li>
+                    <li>
+                        <?= $this->Html->link(__('Adicionar Parecer II'), ['controller' => 'Projetos', 'action' => 'addParecerIi']) ?>
+                    </li>
+
+                    <li>
+                        <?= $this->Html->link(__('Adicionar Parecer IOGE'), ['controller' => 'Projetos', 'action' => 'addParecerIoge']) ?>
+                    </li>
+                </ul>
+        </div>
+    </li>
+
+    <li>
+        <a data-toggle="collapse" href="#collapse8" class="heading">
+            <span class="fa fa-caret-right"></span> Instituições Implementadoras
+        </a>
+
+        <div id="collapse8" class="panel-collapse collapse">
+            <ul>
+                <!--
+                <li>
+                    <?= $this->Html->link(__('Marcar Reunião'), ['controller' => 'Atividades', 'action' => 'marcarReuniao']) ?>
+                </li>
+                <li>
+                    <?= $this->Html->link(__('Agenda de Atividades'), ['controller' => 'Atividades', 'action' => 'agenda']) ?>
+                </li>
+                -->
+
+                <li>
+                    <?= $this->Html->link(__('Adicionar Atividades'), ['controller' => 'Atividades', 'action' => 'add']) ?>
+                </li>
+                <li>
+                    <?= $this->Html->link(__('Gerenciar Atividades'), ['controller' => 'Atividades', 'action' => 'index']) ?>
+                </li>
+                <li>
+                    <?= $this->Html->link(__('Adicionar Ações'), ['controller' => 'Acoes', 'action' => 'add']) ?>
+                </li>
+                <li>
+                    <?= $this->Html->link(__('Gerenciar Ações'), ['controller' => 'Acoes', 'action' => 'index']) ?>
+                </li>
+                <li>
+                    <?= $this->Html->link(__('Adicionar Ata de Reunião'), ['controller' => 'Reunioes', 'action' => 'add']) ?>
+                </li>
+                <li>
+                    <?= $this->Html->link(__('Gerenciar Atas de Reuniões'), ['controller' => 'Reunioes', 'action' => 'index']) ?>
+                </li>
+            </ul>
+        </div>
+    </li>
+
+
+
+    <li class="heading">Configurações Gerais</li>
+
+    <li>
+        <a data-toggle="collapse" href="#collapse5" class="heading">
+            <span class="fa fa-caret-right"></span> Instituições Implementadoras
+        </a>
+
+        <div id="collapse5" class="panel-collapse collapse">
+            <ul>
+                <li>
+                    <?= $this->Html->link(__('Adicionar II'), ['controller' => 'InstituicoesImplementadoras', 'action' => 'add']) ?>
+                </li>
+                <li>
+                    <?= $this->Html->link(__('Gerenciar II\'s'), ['controller' => 'InstituicoesImplementadoras', 'action' => 'index']) ?>
+                </li>
+                <li>
+                    <?= $this->Html->link(__('Adicionar Consultor'), ['controller' => 'Consultores', 'action' => 'add']) ?>
+                </li>
+                <li>
+                    <?= $this->Html->link(__('Gerenciar Consultores'), ['controller' => 'Consultores', 'action' => 'index']) ?>
+                </li>
+            </ul>
+        </div>
+    </li>
+
+    <li>
+        <a data-toggle="collapse" href="#collapse6" class="heading">
+            <span class="fa fa-caret-right"></span> Instituições Avaliadoras
+        </a>
+
+        <div id="collapse6" class="panel-collapse collapse">
+            <ul>
+                <li>
+                    <?= $this->Html->link(__('Adicionar IA'), ['controller' => 'InstituicoesAvaliadoras', 'action' => 'add']) ?>
+                </li>
+                <li>
+                    <?= $this->Html->link(__('Gerenciar IA\'s'), ['controller' => 'InstituicoesAvaliadoras', 'action' => 'index']) ?>
+                </li>
+            </ul>
+        </div>
+    </li>
+
+    <li>
+        <a data-toggle="collapse" href="#collapse7" class="heading">
+            <span class="fa fa-caret-right"></span> Instituições Organizadoras de Grupo de Empresas
+        </a>
+
+        <div id="collapse7" class="panel-collapse collapse">
+                <ul>
+                    <li>
+                        <?= $this->Html->link(__('Adicionar IOGE'), ['controller' => 'InstituicoesOrganizadoras', 'action' => 'add']) ?>
+                    </li>
+                    <li>
+                        <?= $this->Html->link(__('Gerenciar IOGE\'s'), ['controller' => 'InstituicoesOrganizadoras', 'action' => 'index']) ?>
+                    </li>
+                    <li>
+                        <?= $this->Html->link(__('Adicionar Coordenador IOGE\'s'), ['controller' => 'CoordenadoresIoges', 'action' => 'add']) ?>
+                    </li>
+                    <li>
+                        <?= $this->Html->link(__('Gerenciar Coordenador IOGE\'s'), ['controller' => 'CoordenadoresIoges', 'action' => 'index']) ?>
+                    </li>
+                </ul>
+        </div>
+
+    </li>
+
+</ul>
