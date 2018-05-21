@@ -1,5 +1,5 @@
-<<<<<<< HEAD
-# CakePHP Application Skeleton
+# SisMPSBR_IOGE
+## CakePHP Application Skeleton
 
 [![Build Status](https://img.shields.io/travis/cakephp/app/master.svg?style=flat-square)](https://travis-ci.org/cakephp/app)
 [![License](https://img.shields.io/packagist/l/cakephp/app.svg?style=flat-square)](https://packagist.org/packages/cakephp/app)
@@ -25,6 +25,3 @@ the setup traffic lights.
 
 Read and edit `config/app.php` and setup the 'Datasources' and any other
 configuration relevant for your application.
-=======
-# SisMPSBR_IOGE
->>>>>>> 45486b1ac69b6b3906ad0bea473f382e74d405a3
